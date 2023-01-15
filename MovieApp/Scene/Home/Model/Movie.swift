@@ -46,9 +46,9 @@ struct MovieResult: Codable, MovieCellProtocol {
     
     var ratingText: String {
         if let voteAverage = voteAverage {
-            return "\(String(format: "%.1f", voteAverage)) / 10 IMDB"
+            return "Rate by IMBD: \(String(format: "%.1f", voteAverage)) / 10 IMDB"
         }
-        return ""
+        return "No Rate Found..."
     }
     
     var genreItems: [String] {
@@ -56,7 +56,7 @@ struct MovieResult: Codable, MovieCellProtocol {
     }
     
     var overViewText: String {
-        overview ?? ""
+        "OverView: \(String(overview ?? "No OverView Found..."))"
     }
 
     enum CodingKeys: String, CodingKey {

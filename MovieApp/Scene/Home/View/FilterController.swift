@@ -41,7 +41,7 @@ extension FilterController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        50
+        40
     }
 }
 
@@ -51,10 +51,11 @@ extension FilterController: PanModalPresentable {
     }
     
     var shortFormHeight: PanModalHeight {
-        return .contentHeight(312)
+        return .contentHeight(200)
     }
     
     var cornerRadius: CGFloat {
-        16
+        5
     }
 }
+

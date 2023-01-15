@@ -9,8 +9,8 @@ import Foundation
 
 
 class FilterViewModel {
-    var items = [FilterModel(title: "Popular", type: .popular),
-                 FilterModel(title: "Trending", type: .trending),
-                 FilterModel(title: "Top Rated", type: .topRated),
-                 FilterModel(title: "Upcoming", type: .upcoming)]
+    var items = [FilterModel(title: "populars", type: .popular),
+                 FilterModel(title: "trendings", type: .trending),
+                 FilterModel(title: "topRateds", type: .topRated),
+                 FilterModel(title: "upcomings", type: .upcoming)]
 }

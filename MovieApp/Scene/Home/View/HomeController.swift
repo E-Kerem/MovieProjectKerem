@@ -28,9 +28,6 @@ class HomeController: UIViewController {
         viewModel.coordinator = HomeCoordinator(navigationController: navigationController ?? UINavigationController())
         viewModel.getGenreItems()
         viewModel.getNowPlaying()
-        viewModel.errorCallback = { [weak self] errorMessage in
-            print("error: \(errorMessage)")
-        }
         viewModel.successCallback = { [weak self] in
             self?.collection.reloadData()
         }
